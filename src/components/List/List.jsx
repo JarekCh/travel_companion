@@ -6,24 +6,12 @@ import useStyles from './styles.js';
 import { ImportExport } from '@material-ui/icons';
 import PlaceDetails from '../PlaceDetails/PlaceDetails';
 
-function List() {
+function List({ places }) {
   const classes = useStyles();
   const [type, setType] = useState('resteurants')
   const [rating, setRating] = useState('')
 
-  const places = [
-    {name: 'cool place'},
-    {name: 'best bear'},
-    {name: 'best steak'},
-    {name: 'cool place'},
-    {name: 'best bear'},
-    {name: 'best steak'},
-    {name: 'cool place'},
-    {name: 'best bear'},
-    {name: 'best steak'},
-
-  ];
-
+ 
   return (
     <div className={classes.container}>
       <Typography variant='h4'>Resteurant, Hotels & Attractions around you</Typography>
