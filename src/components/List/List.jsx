@@ -6,10 +6,9 @@ import useStyles from './styles.js';
 import { ImportExport } from '@material-ui/icons';
 import PlaceDetails from '../PlaceDetails/PlaceDetails';
 
-function List({ places, childClick, isLoading }) {
+function List({ places, childClick, isLoading, rating, setRating, type, setType }) {
   const classes = useStyles();
-  const [type, setType] = useState('resteurants');
-  const [rating, setRating] = useState('');
+
   const [elRefs, setElRefs] = useState([]);
 
   useEffect(() => {
