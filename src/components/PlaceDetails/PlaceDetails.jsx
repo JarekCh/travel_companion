@@ -42,15 +42,15 @@ function PlaceDetails({ place, selected, refProp }) {
           </Box>
         ))}
         {place?.cuisine?.map(({ name }) => (
-          <Chip key={name} size='small' label ={name} className={classes.chip}/>
+          <Chip key={name.id} size="small" label={name} className={classes.chip} />
         ))}
         {place?.address && (
-          <Typography gutterBottom variant='subtittle2' color='textSecondary' className={classes.subtitle}>
+          <Typography gutterBottom variant='subtitle2' color='textSecondary' className={classes.subtitle}>
             <LocationOnIcon /> {place.address}
           </Typography>
         )}
         {place?.phone && (
-          <Typography gutterBottom variant='subtittle2' color='textSecondary' className={classes.spacing}>
+          <Typography gutterBottom variant='subtitle1' color='textSecondary' className={classes.spacing}>
             <Phone /> {place.phone}
           </Typography>
         )}

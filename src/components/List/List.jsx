@@ -3,7 +3,6 @@ import { CircularProgress, Grid, Typography, InputLabel, MenuItem, FormControl, 
 
 
 import useStyles from './styles.js';
-import { ImportExport } from '@material-ui/icons';
 import PlaceDetails from '../PlaceDetails/PlaceDetails';
 
 function List({ places, childClick, isLoading, rating, setRating, type, setType }) {
