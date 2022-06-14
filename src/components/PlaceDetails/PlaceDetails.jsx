@@ -1,11 +1,11 @@
 import React from 'react';
 import { Box, Typography, Button, Card, CardMedia, CardContent, CardActions, Chip } from '@material-ui/core';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
-import PhoneIcon from '@material-ui/icons/Phone';
 import Rating from '@material-ui/lab/Rating';
+import { Phone } from '@material-ui/icons';
 
 import useStyles from './styles.js';
-import { Phone } from '@material-ui/icons';
+
 
 function PlaceDetails({ place, selected, refProp }) {  
   const classes = useStyles();

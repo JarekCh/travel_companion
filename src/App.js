@@ -9,8 +9,7 @@ import Map from './components/Map/Map';
 
 function App() {  
   const [places, setPlaces] = useState([]);
-  const [WeatherData, setWeatherData] = useState([]);
-  const [Airport, setAirport] = useState([]);
+  const [WeatherData, setWeatherData] = useState([]);  
   const [filteredPlaces, setFilteredPlaces] = useState([]);
 
   const [childClick, setChildClick] = useState(null);
